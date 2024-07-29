@@ -126,6 +126,7 @@ export default function App() {
         onShow={handleShowWatchedList}
         setShowWatched={setShowWatched}
         setData={setData}
+        setWatched={setWatched}
       >
         <p>Found {data.length} results</p>
       </Header>

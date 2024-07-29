@@ -7,6 +7,7 @@ export default function Header({
   onShow,
   setShowWatched,
   setData,
+  setWatched,
   children,
 }) {
   const el = useRef(null);
@@ -33,6 +34,7 @@ export default function Header({
         className="navbar-logo"
         onClick={() => {
           setData([]);
+          setWatched([]);
           setShowWatched(false);
         }}
       >
