@@ -52,7 +52,7 @@ export default function App() {
         setIsLoading(true);
 
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
         );
         if (!res.ok) throw new Error("Error fetching movie details");
 
@@ -77,7 +77,7 @@ export default function App() {
         setError("");
 
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`
         );
         if (!res.ok) throw new Error("Error fetching movies from api");
 
