@@ -51,8 +51,9 @@ export default function App() {
       try {
         setIsLoading(true);
 
+        const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
         const res = await fetch(
-          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
+          `${CORS_PROXY}https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
         );
         if (!res.ok) throw new Error("Error fetching movie details");
 
@@ -76,8 +77,9 @@ export default function App() {
         setIsLoading(true);
         setError("");
 
+        const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
         const res = await fetch(
-          `https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`
+          `${CORS_PROXY}https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`
         );
         if (!res.ok) throw new Error("Error fetching movies from api");
 
