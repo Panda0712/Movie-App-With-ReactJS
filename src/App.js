@@ -37,6 +37,12 @@ export default function App() {
       localStorage.setItem("watchedList", JSON.stringify(updatedList));
       return updatedList;
     });
+    const title = [...watchedList].filter((x) => x.Id === id)[0].Title;
+    setRatings((ratings) => {
+      const { [title]: _, ...newRatings } = ratings;
+      localStorage.setItem("ratings", JSON.stringify(newRatings));
+      return newRatings;
+    });
   }
 
   function handleClose() {
@@ -71,6 +77,7 @@ export default function App() {
 
     async function fetchMovies() {
       try {
+        setShowWatched(false);
         setData([]);
         setIsLoading(true);
         setError("");
