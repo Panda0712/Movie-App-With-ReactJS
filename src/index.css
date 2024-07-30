@@ -40,6 +40,9 @@ body {
 }
 
 @media screen and (max-width:600px) {
+  .navbar-search input{
+    width:200px;
+  }
   .evaluate-list{
     flex-wrap: wrap;
   }
