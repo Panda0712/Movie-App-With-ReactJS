@@ -1,9 +1,6 @@
-import { useEffect } from "react";
 import WatchedListMovie from "./WatchedListMovie";
 
 export default function WatchedList({ watchedList, setShowWatched, onDelete }) {
-  useEffect(() => {}, []);
-
   return (
     <ul className="watched-list">
       <span onClick={() => setShowWatched(false)}>🔙</span>
