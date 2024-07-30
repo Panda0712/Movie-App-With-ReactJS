@@ -56,7 +56,10 @@ export default function WatchedMovie({
                 <p>You have rated this movie {ratings[watched.Title]}⭐</p>
               ) : (
                 <>
-                  <StarRating onSetRating={setMovieRating} />
+                  <StarRating
+                    className="star-rating"
+                    onSetRating={setMovieRating}
+                  />
                   {movieRating > 0 && (
                     <button onClick={handleAdd} className="add-button">
                       + Add to list

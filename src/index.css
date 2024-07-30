@@ -17,12 +17,75 @@ body {
   background:#1B2631  ;
 }
 
+.span-rating{
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width:900px) {
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .movie img{
+    height:250px !important;
+  }
+  .watched-poster{
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .watched-poster img{
+    object-fit: cover;
+    width:200px !important;
+    height:350px !important;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .evaluate-list{
+    flex-wrap: wrap;
+  }
+  .movie img{
+    height:200px !important;
+  }
+  .watched-poster{
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start !important;
+    font-size: 12px;
+    padding:0 20px;
+  }
+  .watched-poster img{
+    width:180px !important;
+    height:220px !important;
+  }
+  .watched-wrapper{
+    width:90% !important;
+  }
+  .star-rating{
+    margin-left: 10px;
+  }
+  .star-rating ul span{
+    width:20px !important;
+    height:20px !important;
+  }
+  .rating{
+    padding:10px 5px !important;
+  }
+  .add-button{
+    padding:8px 15px !important;
+    font-size: 12px;
+  }
+  .span-rating{
+    font-size:14px !important;
+  }
+}
+
 .navbar{
   padding:10px 20px;
   background:#B2BABB ;
   display:flex;
   align-items: center;
   justify-content: space-between;
+  gap:40px;
   color:#1B4F72;
 }
 

@@ -66,7 +66,7 @@ export default function StarRating({
           )
         )}
       </ul>
-      <span style={textStyle}>
+      <span className="span-rating" style={textStyle}>
         {message.length === maxRating
           ? message[tempRating ? tempRating - 1 : rating - 1]
           : tempRating || rating || ""}
